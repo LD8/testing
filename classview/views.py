@@ -5,4 +5,5 @@ from django.views.generic.list import ListView
 # Create your views here.
 class TopicListView(ListView):
     model = Topic
-    template_name = "topics.html"
+    template_name = "classview/topics.html"
+    context_object_name = 'topics'
